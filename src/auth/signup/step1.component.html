@@ -1,0 +1,15 @@
+<div>
+    <h2>Sign Up - Step 1</h2>
+    <form>
+        <div>
+            <input type="text" placeholder="Name" [(ngModel)]="name" />
+        </div>
+        <div>
+            <input type="text" placeholder="Email or Phone" [(ngModel)]="emailOrPhone" />
+        </div>
+        <div>
+            <input type="password" placeholder="Create Password" [(ngModel)]="password" />
+        </div>
+        <button type="button" (click)="continue()">Continue</button>
+    </form>
+</div>

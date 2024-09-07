@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@angular/forms": "^18.2.3",
+    "@angular/router": "^18.2.3",
+    "@ngrx/store": "^18.0.2",
+    "build": "^0.1.4",
+    "npm": "^10.8.3",
+    "run": "^1.5.0"
+  }
+}

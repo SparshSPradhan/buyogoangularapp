@@ -1,0 +1,24 @@
+<div>
+    <h2>Sign Up - Step 2</h2>
+    <form>
+        <div>
+            <select [(ngModel)]="organization" (change)="validateOrganization()">
+                <option *ngFor="let org of organizations">{{ org }}</option>
+            </select>
+            <div *ngIf="orgError">{{ orgError }}</div>
+        </div>
+        <div>
+            <input type="text" placeholder="Designation" [(ngModel)]="designation" />
+        </div>
+        <div>
+            <input type="date" [(ngModel)]="birthdate" />
+        </div>
+        <div>
+            <input type="text" placeholder="City" [(ngModel)]="city" />
+        </div>
+        <div>
+            <input type="text" placeholder="Pincode" [(ngModel)]="pincode" />
+        </div>
+        <button type="button" (click)="submit()">Submit</button>
+    </form>
+</div>

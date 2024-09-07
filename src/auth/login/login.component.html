@@ -1,0 +1,13 @@
+<div>
+    <h2>Login</h2>
+    <form>
+        <div>
+            <input type="text" placeholder="Email or Phone" [(ngModel)]="emailOrPhone" (change)="checkUserExists()" />
+        </div>
+        <div *ngIf="userExists">
+            <input type="password" placeholder="Password" [(ngModel)]="password" />
+            <div *ngIf="loginError">{{ loginError }}</div>
+            <button type="button" (click)="login()">Login</button>
+        </div>
+    </form>
+</div>
